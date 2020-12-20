@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding: 0px;
+	background-color: #2e343c;
+	box-shadow:inset 2px 2px 100px rgba(0,0,0,0.2); 
+
+	
+	height: 100vh;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+}
+*{
+	box-sizing: border-box;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%, -50%);
+	width:310px;
+	height: 520px;
+	
+	background-position:center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	box-shadow: 1px 1px 12px rgba(0,0,0,0.2),inset 1px 1px 60px rgba(0,0,0,0.2);
+	
+	box-sizing: border-box;
+}
+
+.heading{
+	text-align: center;
+	font-family: myriad pro;
+	letter-spacing: 1px;
+	width:100%;
+	height: 200px;
+	background-color: #cc1f46;
+	display: flex;
+	border-radius: 5px 5px 0px 0px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow:inset 2px 2px 100px rgba(0,0,0,0.2); 
+}
+.heading p:nth-child(1){
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 26px;
+	
+}
+.heading p:nth-child(2){
+	font-size:12px;
+	color: #E9E9E9;
+	font-family: calibri;
+	
+}
+.heading p{
+	line-height:10px;
+	margin: 10px;
+	
+}
+.input-container{
+	display: flex;
+	height: 100px;
+	width: 350px;
+	justify-content:space-around;
+	align-items: center;
+	background-color:#e0244e;
+	border-radius:50px;
+	box-shadow: 1px 2px 12px rgba(0,0,0,0.2);
+	box-sizing: border-box;
+	margin-top: -15%;
+	
+}
+.p-icon{
+	width:70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color:#373e46; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	
+}
+.p-icon img{
+	height: 30px;
+}
+.user-inputs{
+	display: flex;
+	flex-direction: column;
+}
+.user-inputs input{
+	width:140px;
+	height: 25px;
+	
+	font-family: calibri;
+	border: none;
+	outline: none;
+	margin: 3px;
+	background-color: #cb1e46;
+	color: #FFFFFF;
+	padding:5px;
+	animation: animation-1 ease 7s;
+}
+.user-inputs input::placeholder{
+	color: #ffffff;
+}
+
+
+.check-box {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	font-family: myriad pro;
+	font-size: 12px;
+}
+.check-box p{
+	color: #e0e0e0;
+}
+.login{
+	width:140px;
+	height: 40px;
+	border:none;
+	outline: none;
+	background-color: #e0244e;
+	color: #ffffff;
+	font-family: myriad pro;
+	font-weight: bold;
+	font-size: 16px;
+	box-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+	border-radius:20px;
+}
+.forget{
+	font-family: myriad pro;
+	font-size: 12px;
+	color:#9e9fa0; 
+}
+.social {
+	display: flex;
+	justify-content: center;
+	padding: 0px;
+}
+.social  li a{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	box-shadow: 1px 2px 12px rgba(0,0,0,0.2);
+	border-radius:5px;
+}
+.social li a i{
+color:#FFFFFF;
+font-size: 14px;
+}
+.social li a:hover{
+	background-color: #cc1f46;
+	transition:linear 0.5s;
+	
+}
+
+button:active{
+	transform: scale(1.1);
+}
+.input-container input:focus{
+	background-color: transparent;
+	border-bottom: 1px solid #A7092D;
+	transition: all ease 0.5s;
+}
+.check-box,.login,.forget{
+	margin: 10px ;
+}
